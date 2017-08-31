@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/service/TripService.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/web/jsp/addTrip.jsp</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/dao/jpa/JpaCustomerOrderDao.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/web/servlet/LoginServlet.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/web/servlet/AddTrainStationServlet.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/web/jsp/addTrainStation.jsp</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/dao/CustomerOrderDao.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/entity/TrainStation.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/web/servlet/BuyTripServlet.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/web/jsp/buyTrip.jsp</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/web/jsp/listTrips.jsp</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/entity/CustomerOrder.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/service/CustomerOrderService.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/dao/TrainStationDao.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/entity/Customer.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/service/TrainStationService.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/web/servlet/LogoutServlet.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/dao/jpa/JpaTrainStationDao.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/dao/TripDao.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/web/servlet/RemoveTripServlet.java</file>
+            <file>file:/home/thibault/Workspaces/workspace-netbeans/SupRail/src/java/com/myschool/suprails/web/servlet/AddTripServlet.java</file>
+        </group>
+    </open-files>
+</project-private>
