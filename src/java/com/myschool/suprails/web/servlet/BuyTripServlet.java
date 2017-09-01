@@ -9,9 +9,13 @@ import com.myschool.suprails.entity.Customer;
 import com.myschool.suprails.entity.CustomerOrder;
 import com.myschool.suprails.entity.Trip;
 import com.myschool.suprails.service.CustomerOrderService;
+import com.myschool.suprails.service.MessageService;
 import com.myschool.suprails.service.TripService;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.ejb.EJB;
+import javax.jms.JMSException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -49,7 +53,11 @@ public class BuyTripServlet extends HttpServlet{
         
         CustomerOrder customerOrder = new CustomerOrder(customer, trip);
         customerOrderService.sendMail(email);
-        customerOrderService.processCustomerOrder(customerOrder);
+        try {
+            customerOrderService.processCustomerOrder(customerOrder);
+        } catch (JMSException ex) {
+            Logger.getLogger(BuyTripServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
 
         resp.sendRedirect(getServletContext().getContextPath() + "/trips");
     }

@@ -11,6 +11,12 @@ import com.myschool.suprails.entity.CustomerOrder;
 import javax.ejb.Asynchronous;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.jms.ConnectionFactory;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 
 /**
  *
@@ -21,10 +27,13 @@ public class CustomerOrderService {
     
     @EJB
     private CustomerOrderDao customerOrderDao;
+    @EJB
+    private MessageService messageService;
     
-    public CustomerOrder processCustomerOrder(CustomerOrder order){
+    public CustomerOrder processCustomerOrder(CustomerOrder order) throws JMSException{
         
         customerOrderDao.addCustomerOrder(order);
+        messageService.sendMessageToPrinter(order);
         return order;
     }
     
